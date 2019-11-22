@@ -1,0 +1,99 @@
+{
+  "butterflies": [
+    {
+      "id": "GI9_EuH8s1",
+      "commonName": "Zebra Swallowtail",
+      "species": "Protographium marcellus",
+      "article": "https://en.wikipedia.org/wiki/Protographium_marcellus",
+      "rating": 0,
+      "numOfRatings": 0
+    },
+    {
+      "id": "xRKSdjkBt4",
+      "commonName": "Plum Judy",
+      "species": "Abisara echerius",
+      "article": "https://en.wikipedia.org/wiki/Abisara_echerius",
+      "rating": 0,
+      "numOfRatings": 0
+    },
+    {
+      "id": "0MUBKMu07U",
+      "commonName": "Red Pierrot",
+      "species": "Talicada nyseus",
+      "article": "https://en.wikipedia.org/wiki/Talicada_nyseus",
+      "rating": "5.0",
+      "numOfRatings": 1
+    },
+    {
+      "id": "NLktii5zvK",
+      "commonName": "Texan Crescentspot",
+      "species": "Anthanassa texana",
+      "article": "https://en.wikipedia.org/wiki/Anthanassa_texana",
+      "rating": 0,
+      "numOfRatings": 0
+    },
+    {
+      "id": "SMyaT24g-N",
+      "commonName": "Guava Skipper",
+      "species": "Phocides polybius",
+      "article": "https://en.wikipedia.org/wiki/Phocides_polybius",
+      "rating": 0,
+      "numOfRatings": 0
+    },
+    {
+      "id": "DCenP4kQNQ",
+      "commonName": "Mexican Bluewing",
+      "species": "Myscelia ethusa",
+      "article": "https://en.wikipedia.org/wiki/Myscelia_ethusa",
+      "rating": 0,
+      "numOfRatings": 0
+    },
+    {
+      "id": "vWpP25YfM",
+      "commonName": "Brimestone",
+      "species": "Gonepteryx rhamni",
+      "article": "https://en.wikipedia.org/wiki/Gonepteryx_rhamni",
+      "rating": "3.0",
+      "numOfRatings": 1
+    }
+  ],
+  "users": [
+    {
+      "id": "OOWzUaHLsK",
+      "username": "iluvbutterflies",
+      "listOfRatings": []
+    },
+    {
+      "id": "sdmU7-wkQX",
+      "username": "flutterby",
+      "listOfRatings": []
+    },
+    {
+      "id": "aqekk3t4kw",
+      "username": "metamorphosize_me",
+      "listOfRatings": [
+        {
+          "id": "vWpP25YfM",
+          "commonName": "Brimestone",
+          "species": "Gonepteryx rhamni",
+          "article": "https://en.wikipedia.org/wiki/Gonepteryx_rhamni",
+          "rating": "3.0",
+          "numOfRatings": 1
+        },
+        {
+          "id": "0MUBKMu07U",
+          "commonName": "Red Pierrot",
+          "species": "Talicada nyseus",
+          "article": "https://en.wikipedia.org/wiki/Talicada_nyseus",
+          "rating": "5.0",
+          "numOfRatings": 1
+        }
+      ]
+    },
+    {
+      "id": "i8QKvVPDE",
+      "username": "hassanbadru",
+      "listOfRatings": []
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "name": "butterfly-api-homework",
+  "version": "1.0.0",
+  "description": "An API for butterflies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm src/index.js",
+    "watch": "nodemon -r esm src/index.js",
+    "init-db": "node scripts/init-db.js",
+    "lint": "eslint .",
+    "test": "node scripts/init-testdb.js; npm run lint -- --fix && jest",
+    "test-watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapbox/butterfly-api-homework.git"
+  },
+  "author": "mapbox",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mapbox/butterfly-api-homework/issues"
+  },
+  "homepage": "https://github.com/mapbox/butterfly-api-homework#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.6.2",
+    "@mapbox/fusspot": "^0.5.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "path": "^0.12.7",
+    "shortid": "^2.2.14"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/register": "^7.6.2",
+    "@mapbox/eslint-config-mapbox": "^2.0.1",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-jest": "^24.9.0",
+    "eslint": "^6.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=10.15.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 11,
+      "sourceType": "module",
+      "allowImportExportEverywhere": true
+    },
+    "extends": "@mapbox/eslint-config-mapbox",
+    "overrides": [
+      {
+        "files": "test/**",
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ],
+    "watchPathIgnorePatterns": [
+      "db.json"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      [
+        "@babel/transform-runtime"
+      ]
+    ]
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.db.json"
+    ]
+  }
+}
